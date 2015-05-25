@@ -1,0 +1,105 @@
+---
+---
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,700);
+$body-copy-font: 'Raleway';
+$link-color: #118aa4;
+
+@import "qb/all";
+
+html,
+body{
+	height: 100%;
+}
+
+%discrete-link{
+	color:inherit;
+	text-decoration:none;
+}
+
+body{
+	color: #202020;
+	overflow-y: scroll;
+}
+
+p{
+	font-size:18px;
+	line-height:1.45;
+}
+li{
+	font-size:18px;
+}
+p a{
+	color:$link-color;
+	text-decoration:none;
+	
+	&:hover,
+	&:focus{
+		color:darken($link-color,10);
+		text-decoration: underline;
+	}
+}
+
+.main-nav{
+	margin: 20px 0 30px;
+	
+	a{
+		display: inline-block;
+		color:$link-color;
+		text-decoration:none;
+		font-size: 20px;
+		padding: 4px 0;
+		margin-right: 40px;
+
+		&:hover,
+		&:focus{
+			color:darken($link-color,10);
+			text-decoration: underline;
+		}
+	}
+	li{
+		display: inline-block;
+		list-style: none;
+		margin-bottom: 10px;
+	}
+}
+
+.wrapper{
+	max-width:600px;
+	margin:0 auto;
+	padding: 40px 20px;
+}
+
+.content.default{
+	h1{
+		text-align: center;
+	}
+	
+	h2{
+		text-align: center;
+		text-transform: capitalize;
+		font-weight: 500;
+		margin-bottom: 8px;
+	}
+	p{
+		margin: 15px 0;
+	}
+}
+
+.entrainements{
+	width: 100%;
+	max-width: 400px;
+	margin: auto;
+	
+	th{
+		text-align: left;
+		font-weight: 400;
+		vertical-align: top;
+		padding-bottom: 12px;
+	}
+	td{
+		font-weight: 700;
+	}
+	td.note{
+		font-weight: 500;
+	}
+}

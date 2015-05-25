@@ -1,0 +1,9 @@
+baseurl: /infini
+img: /infini/img/
+exclude: ['serve.bat', 'Gemfile', 'README.md']
+#paginate_path: 'page:num'
+#paginate: 8
+
+sass:
+    sass_dir: css
+    style: :compressed
