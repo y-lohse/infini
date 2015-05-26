@@ -39,6 +39,17 @@ p a{
 	}
 }
 
+.logo-header{
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	background-image: url('../img/logo-infini-jiujitsu.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	text-indent: -9999px;
+}
+
 .main-nav{
 	margin: 20px 0 30px;
 	
@@ -80,6 +91,12 @@ p a{
 		font-weight: 500;
 		margin-bottom: 8px;
 	}
+	h3{
+		text-align: center;
+		text-transform: capitalize;
+		font-weight: 500;
+		margin-bottom: 8px;
+	}
 	p{
 		margin: 15px 0;
 	}
@@ -88,7 +105,7 @@ p a{
 .entrainements{
 	width: 100%;
 	max-width: 400px;
-	margin: auto;
+	margin: 14px auto;
 	
 	th{
 		text-align: left;
@@ -97,9 +114,21 @@ p a{
 		padding-bottom: 12px;
 	}
 	td{
+		vertical-align: top;
 		font-weight: 700;
 	}
 	td.note{
 		font-weight: 500;
 	}
+}
+
+#map-wrapper{
+	height: 400px;
+	margin: 20px 0;
+}
+#map{
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 400px;
 }

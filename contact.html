@@ -1,0 +1,166 @@
+---
+layout: default
+title: Infos Pratiques — Infini Jiu-Jitsu
+---
+{% include mast-head.html %}
+{% include menu.html %}
+
+<h2>
+	infos pratiques
+</h2>
+
+<p>
+	Les entrainements se font soit en gi (kimono), soit en no-gi (short et t-shirt). Vous pouvez participer à autant de cours par semaine que vous le souhaitez.
+</p>
+
+<p>
+	Les cours sont réparis entre deux salles:
+</p>
+
+<ol>
+	<li>
+		Au Dojo du CREPS, 4 allée du Sommerhof à STrasbourg
+	</li>
+	<li>
+		Au Complexe Sportif Lixenbuhl, 24 Rue Lixenbuhl à Illkirch-Graffenstaden
+	</li>
+</ol>
+
+<div id="map-wrapper">
+	<div id="map"></div>
+</div>
+
+<h3>
+	Entrainements
+</h3>
+
+<table class="entrainements">
+	<thead></thead>
+	<tbody>
+		<tr>
+			<th>
+				Lundi
+			</th>
+			<td>
+				19:00 – 21:00
+			</td>
+			<td class="lieu">
+				CREPS
+			</td>
+			<td class="note">
+				gi
+			</td>
+		</tr>
+		<tr>
+			<th>
+				Mardi
+			</th>
+			<td>
+				20:15 – 22:00
+			</td>
+			<td class="lieu">
+				Lixenbuhl
+			</td>
+			<td class="note">
+				gi
+			</td>
+		</tr>
+		<tr>
+			<th>
+				Jeudi
+			</th>
+			<td>
+				20:15 – 22:00
+			</td>
+			<td class="lieu">
+				Lixenbuhl
+			</td>
+			<td class="note">
+				gi
+			</td>
+		</tr>
+		<tr>
+			<th rowspan="3">
+				Vendredi
+			</th>
+			<td>
+				18:00 – 19:15
+			</td>
+			<td class="lieu" rowspan="3">
+				CREPS
+			</td>
+			<td class="note">
+				no-gi
+			</td>
+		</tr>
+		<tr>
+			<td>
+				18:00 – 19:15
+			</td>
+			<td class="note">
+				enfants
+			</td>
+		</tr>
+		<tr>
+			<td>
+				19:15 – 21:00
+			</td>
+			<td class="note">
+				gi
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>
+	Seuls les enfants ayant entre 7 et 11 ans sont admis au cours du vendredi.
+	<br />
+	Pour toute question complémentaire, vous pouvez joindre Salah Mehzoud au 06484894089, envoyer un mail à lol@infini-jj.com ou nous contactervia notre page facebook.
+</p>
+
+<h3>
+	Inscription
+</h3>
+
+<ul>
+	<li>
+		Trois scéances d'essai offertes
+	</li>
+	<li>
+		Remplissez <a href="#">la fiche de renseignement</a>
+	</li>
+	<li>
+		Munissez vous d'un certificat médical vous déclarant apte à la pratique du Jiu-Jitsu Brésilien
+	</li>
+	<li>
+		Les frais d'inscription s'élèvent à 2564804€ par an, réglable en trois fois
+	</li>
+	<li>
+		Frais de licenses supplménetaires pour les compétiteurs (40€ pour la CFJJb, ?€ pour la FFL)
+	</li>
+</ul>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        
+<script type="text/javascript">
+    // When the window has finished loading create our google map below
+    google.maps.event.addDomListener(window, 'load', init);
+    function init() {
+        // Basic options for a simple Google Map
+        // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+        var mapOptions = {
+            // How zoomed in you want the map to start at (always required)
+            zoom: 14,
+            // The latitude and longitude to center the map (always required)
+            center: new google.maps.LatLng(48.5826023, 7.7498525), // New York
+            // How you would like to style the map. 
+            // This is where you would paste any style found on Snazzy Maps.
+            styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
+        };
+        // Get the HTML DOM element that will contain your map 
+        // We are using a div with id="map" seen below in the <body>
+        var mapElement = document.getElementById('map');
+        // Create the Google Map using our element and options defined above
+        var map = new google.maps.Map(mapElement, mapOptions);
+    }
+</script>
