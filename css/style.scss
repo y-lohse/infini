@@ -103,6 +103,11 @@ p a{
 	p{
 		margin: 15px 0;
 	}
+	
+	ul, 
+	ol{
+		list-style-position: outside;
+	}
 }
 
 .entrainements{
