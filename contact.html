@@ -19,7 +19,7 @@ title: Infos Pratiques — Infini Jiu-Jitsu
 
 <ol>
 	<li>
-		Au Dojo du CREPS, 4 allée du Sommerhof à STrasbourg
+		Au Dojo du CREPS, 4 allée du Sommerhof à Strasbourg
 	</li>
 	<li>
 		Au Complexe Sportif Lixenbuhl, 24 Rue Lixenbuhl à Illkirch-Graffenstaden
@@ -150,9 +150,11 @@ title: Infos Pratiques — Infini Jiu-Jitsu
         // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
         var mapOptions = {
             // How zoomed in you want the map to start at (always required)
-            zoom: 14,
+            zoom: 12,
             // The latitude and longitude to center the map (always required)
-            center: new google.maps.LatLng(48.5826023, 7.7498525), // New York
+            center: new google.maps.LatLng(48.55257411793179, 7.72075104999999), 
+            scrollwheel: false,
+            
             // How you would like to style the map. 
             // This is where you would paste any style found on Snazzy Maps.
             styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
@@ -162,5 +164,29 @@ title: Infos Pratiques — Infini Jiu-Jitsu
         var mapElement = document.getElementById('map');
         // Create the Google Map using our element and options defined above
         var map = new google.maps.Map(mapElement, mapOptions);
+    
+    	var geocoder = new google.maps.Geocoder();
+    	
+		geocoder.geocode( { 'address': 'CREPS, 4, allée du Sommerhof Strasbourg'}, function(results, status) {
+		  if (status == google.maps.GeocoderStatus.OK) {
+			var marker = new google.maps.Marker({
+				map: map,
+				position: results[0].geometry.location
+			});
+		  }
+		});
+    
+    	geocoder.geocode( { 'address': 'Complexe Sportif Lixenbuhl, 24 Rue Lixenbuhl Illkirch-Graffenstaden'}, function(results, status) {
+		  if (status == google.maps.GeocoderStatus.OK) {
+			var marker = new google.maps.Marker({
+				map: map,
+				position: results[0].geometry.location
+			});
+		  }
+		});
+    
+		google.maps.event.addListener(map, 'mousedown', function(){
+			map.setOptions({ scrollwheel: true });
+		});
     }
 </script>
