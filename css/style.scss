@@ -10,6 +10,8 @@ html,
 body{
 	height: 100%;
 	background-image: url('../img/light_grey.png');
+	-webkit-font-feature-settings: "liga";
+    		font-feature-settings: "liga";
 }
 
 %discrete-link{
