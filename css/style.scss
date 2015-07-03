@@ -110,6 +110,17 @@ p a{
 	ol{
 		list-style-position: outside;
 	}
+	
+	address{
+		display: inline-block;
+		width: 40%;
+		margin: 0 4%;
+		vertical-align: top;
+		
+		p{
+			line-height: 1.2;
+		}
+	}
 }
 
 .entrainements{
@@ -129,6 +140,22 @@ p a{
 	}
 	td.note{
 		font-weight: 500;
+	}
+}
+
+.tarifs{
+	th, td{
+		border: 1px solid #888;
+		padding: 6px;
+	}
+	
+	tbody th{
+		font-weight: normal;
+		text-align: left;
+	}
+	
+	td{
+		text-align: center;
 	}
 }
 
