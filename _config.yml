@@ -1,4 +1,4 @@
-baseurl: /
+baseurl: 
 img: /infini/img/
 exclude: ['serve.bat', 'Gemfile', 'README.md']
 #paginate_path: 'page:num'
