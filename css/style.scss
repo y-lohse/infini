@@ -77,6 +77,30 @@ p a{
 	}
 }
 
+.lang{
+	position: absolute;
+	right: 10px;
+	top: 15px;
+	background: #313131;
+	font-size: 0;
+	
+	span,
+	a{
+		display: inline-block;
+		border-left: 1px solid black;
+		padding: 2px 6px;
+		color: #fff;
+		font-size: 15px;
+		
+		&:first-child{
+			border-left: none;
+		}
+	}
+	span{
+		background: lighten(#313131, 25);
+	}
+}
+
 .wrapper{
 	max-width:600px;
 	margin:0 auto;
