@@ -91,6 +91,7 @@ p a{
 		padding: 2px 6px;
 		color: #fff;
 		font-size: 15px;
+		text-decoration: none;
 		
 		&:first-child{
 			border-left: none;
@@ -204,4 +205,8 @@ p a{
 	left: 0;
 	right: 0;
 	height: 450px;
+}
+
+.news{
+	list-style: none;
 }

@@ -1,0 +1,14 @@
+---
+layout: default
+title: News | Infini Jiu-Jitsu
+---
+{% include mast-head.html %}
+{% include menu.html %}
+
+<ul class="news">
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
