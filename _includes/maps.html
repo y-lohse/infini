@@ -10,7 +10,7 @@
             // How zoomed in you want the map to start at (always required)
             zoom: 12,
             // The latitude and longitude to center the map (always required)
-            center: new google.maps.LatLng(48.57257411793179, 7.72075104999999), 
+            center: new google.maps.LatLng(48.55257411793179, 7.72075104999999), 
             scrollwheel: false,
             
             // How you would like to style the map. 
@@ -25,14 +25,14 @@
     
     	var geocoder = new google.maps.Geocoder();
     	
-		geocoder.geocode( { 'address': 'Centre nautique de Schiltigheim, 9 Rue de Turenne, 67300 Schiltigheim'}, function(results, status) {
-		  if (status == google.maps.GeocoderStatus.OK) {
-			var marker = new google.maps.Marker({
-				map: map,
-				position: results[0].geometry.location
-			});
-		  }
-		});
+//		geocoder.geocode( { 'address': 'Centre nautique de Schiltigheim, 9 Rue de Turenne, 67300 Schiltigheim'}, function(results, status) {
+//		  if (status == google.maps.GeocoderStatus.OK) {
+//			var marker = new google.maps.Marker({
+//				map: map,
+//				position: results[0].geometry.location
+//			});
+//		  }
+//		});
     
     	geocoder.geocode( { 'address': 'Complexe Sportif Lixenbuhl, 24 Rue Lixenbuhl Illkirch-Graffenstaden'}, function(results, status) {
 		  if (status == google.maps.GeocoderStatus.OK) {
