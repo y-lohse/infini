@@ -159,6 +159,11 @@ p a{
 	}
 }
 
+.mini-galerie img{
+    display: inline-block;
+    width: 24%;
+}
+
 .entrainements{
 	width: 100%;
 	max-width: 600px;
@@ -205,3 +210,5 @@ p a{
 	right: 0;
 	height: 450px;
 }
+
+@import "zoom";
