@@ -1,12 +1,12 @@
 <nav class="main-nav">
 	<ol>
 		<li>
-			<a href="{{ site.baseurl }}/index.html">
+			<a href="{{ site.baseurl }}/index.html" {% if (include.current == 'index') %}class="current"{% endif %}>
 				infini jiu-jitsu brésilien
 			</a>
 		</li>
 		<li>
-			<a href="{{ site.baseurl }}/contact.html">
+			<a href="{{ site.baseurl }}/contact.html" {% if (include.current == 'contact') %}class="current"{% endif %}>
 				infos pratiques
 			</a>
 		</li>
