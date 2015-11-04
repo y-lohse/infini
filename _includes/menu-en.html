@@ -1,12 +1,12 @@
 <nav class="main-nav">
 	<ol>
 		<li>
-			<a href="{{ site.baseurl }}/en/index.html">
+			<a href="{{ site.baseurl }}/en/index.html" {% if (include.current == 'index') %}class="current"{% endif %}>
 				infini jiu-jitsu
 			</a>
 		</li>
 		<li>
-			<a href="{{ site.baseurl }}/en/contact.html">
+			<a href="{{ site.baseurl }}/en/contact.html" {% if (include.current == 'contact') %}class="current"{% endif %}>
 				useful informations
 			</a>
 		</li>

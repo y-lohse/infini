@@ -42,6 +42,60 @@ p a{
 	}
 }
 
+.mast-head{
+	position: relative;
+	background-image: url('../img/mast-head.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	color: #000;
+	font-size: 60px;
+	
+	h1{
+		position: absolute;
+		right: 0;
+		top: 50%;
+		font-weight: 700;
+		line-height: 1;
+	}
+	span{
+		display: block;
+	}
+	.infini{
+		border-bottom: 3px solid red;
+	}
+	.jj{
+		padding-right: 160px;
+	}
+	
+	@include width-below(1600px){
+		font-size: 45px;
+		
+		.jj{
+			padding-right: 100px;
+		}
+	}
+	@include width-below(1200px){
+		font-size: 38px;
+		
+		.jj{
+			padding-right: 40px;
+		}
+	}
+	@include width-below(1000px){
+		font-size: 28px;
+		h1{
+			background: rgba(#fff, .7);
+			padding: 10px 0 10px 25px;
+		}
+		
+		.jj{
+			padding-right: 40px;
+		}
+	}
+}
+
 .logo-header{
 	width: 200px;
 	height: 200px;
@@ -69,6 +123,18 @@ p a{
 			color:darken($link-color,10);
 			text-decoration: underline;
 		}
+		
+		&.current{
+			border: 1px solid darken($link-color, 15);
+			color: darken($link-color, 15);
+			padding: 4px;
+			
+			&:hover,
+			&:focus{
+				color: darken($link-color, 15);
+				text-decoration: none;
+			}
+		}
 	}
 	li{
 		display: inline-block;
@@ -91,13 +157,14 @@ p a{
 		padding: 2px 6px;
 		color: #fff;
 		font-size: 15px;
+		text-decoration: none;
 		
 		&:first-child{
 			border-left: none;
 		}
 	}
-	span{
-		background: lighten(#313131, 25);
+	a{
+	background: lighten(#313131, 25);
 	}
 }
 
@@ -105,6 +172,10 @@ p a{
 	max-width:600px;
 	margin:0 auto;
 	padding: 40px 20px;
+	
+	@include width-below(400px){
+		padding: 30px 12px;
+	}
 }
 
 .content.default{
@@ -133,18 +204,11 @@ p a{
 	ul, 
 	ol{
 		list-style-position: outside;
+		
+		@include width-below(650px){
+			list-style-position: inside;
+		} 
 	}
-	
-//	address{
-//		display: inline-block;
-//		width: 40%;
-//		margin: 0 4%;
-//		vertical-align: top;
-//		
-//		p{
-//			line-height: 1.2;
-//		}
-//	}
 	
 	hr{
 		border: none;
@@ -173,11 +237,13 @@ p a{
 		text-align: left;
 		font-weight: 400;
 		vertical-align: top;
-		padding-bottom: 12px;
+//		padding-bottom: 12px;
+		padding: 8px 4px;
 	}
 	td{
 		vertical-align: top;
 		font-weight: 700;
+		padding: 8px 4px;
 	}
 	td.note{
 		font-weight: 500;
@@ -197,6 +263,14 @@ p a{
 	
 	td{
 		text-align: center;
+	}
+	
+	@include width-below(500px){
+		font-size: 14px;
+		th, 
+		td{
+			padding: 4px 2px
+		}
 	}
 }
 
