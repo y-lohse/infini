@@ -147,6 +147,7 @@ a {
 }
 
 .nav-logo {
+  color: #000;
   margin-bottom: 0;
   font-size: 24px;
   font-weight: 700;
@@ -240,6 +241,10 @@ a {
 
 .paragraph.inline {
   display: inline-block;
+}
+
+.paragraph.m-bottom {
+  margin-bottom: 10px;
 }
 
 .heading {
@@ -419,7 +424,6 @@ a {
 
 .horaires {
   width: 150px;
-  margin-bottom: 10px;
   margin-right: 20px;
   display: inline-block;
 }
