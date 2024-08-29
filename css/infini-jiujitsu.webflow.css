@@ -3,7 +3,7 @@
   --white: white;
   --black: #18181d;
   --white-smoke: whitesmoke;
-  --dark-grey: rgba(170, 170, 170, .2);
+  --dark-grey: #aaa3;
   --seashell: #fff4ec;
   --red: #d92c01;
 }
@@ -121,7 +121,7 @@ a {
 }
 
 .menu-button.w--open {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #0000;
 }
 
 .belt-decoration {
@@ -129,10 +129,7 @@ a {
   width: 100%;
   height: 4px;
   position: absolute;
-  top: 0%;
-  bottom: auto;
-  left: 0%;
-  right: 0%;
+  inset: 0% 0% auto;
 }
 
 .belt-decoration.red {
@@ -204,7 +201,6 @@ a {
 
 .navbar1.active-nav1 {
   z-index: 100;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
@@ -634,7 +630,7 @@ a {
   }
 
   .menu-button.w--open {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #0000;
   }
 
   .section {
@@ -872,7 +868,7 @@ a {
   }
 
   .debut-description {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #0000;
     padding: 40px 0 0;
   }
 
@@ -992,8 +988,7 @@ a {
 }
 
 #w-node-afb315e8-f12f-f28f-97b6-b53a50b1349d-4fd0acf1 {
-  align-self: center;
-  justify-self: end;
+  place-self: center end;
 }
 
 #w-node-_61cec293-d05d-4ab8-d2b8-5af54806a8cf-4fd0acf1 {
@@ -1020,14 +1015,12 @@ a {
 
 #w-node-f7ec86c2-8b0a-284f-8e52-bd87dc37c613-dc37c610 {
   grid-area: span 1 / span 4 / span 1 / span 4;
-  align-self: center;
-  justify-self: start;
+  place-self: center start;
 }
 
 #w-node-f7ec86c2-8b0a-284f-8e52-bd87dc37c615-dc37c610 {
   grid-area: span 1 / span 8 / span 1 / span 8;
-  align-self: center;
-  justify-self: end;
+  place-self: center end;
 }
 
 #w-node-_20bd1ad8-ccfd-f3f8-1500-163cbd1315fe-bd1315f6 {
@@ -1087,8 +1080,7 @@ a {
 @media screen and (max-width: 991px) {
   #w-node-afb315e8-f12f-f28f-97b6-b53a50b1349d-4fd0acf1 {
     grid-area: span 1 / span 2 / span 1 / span 2;
-    align-self: center;
-    justify-self: stretch;
+    place-self: center stretch;
   }
 
   #w-node-_61cec293-d05d-4ab8-d2b8-5af54806a8cf-4fd0acf1 {
@@ -1184,8 +1176,7 @@ a {
 
   #w-node-f7ec86c2-8b0a-284f-8e52-bd87dc37c615-dc37c610 {
     grid-area: span 1 / span 6 / span 1 / span 6;
-    align-self: center;
-    justify-self: center;
+    place-self: center;
   }
 
   #w-node-_63bd56ea-3f82-e978-1211-1524fb84c60e-0d045f65 {
